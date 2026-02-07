@@ -18,6 +18,22 @@
     "vite": "^5.0.0"
   }
 }
-"scripts": {
-  "build": "npx vite build"
+{
+  "name": "i-ching",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npx vite build",  // 使用 npx 避免权限问题
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.5"
+  }
 }
